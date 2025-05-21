@@ -4,115 +4,181 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <nav>
+      <div></div>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="">Animals</a></li>
-        <li><a href="">Drugs</a></li>
-        <li><a href="">Treatment</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="">Home</a></li>
+        <li><a href="#animals">Animals</a></li>
+        <li><a href="#drugs">Drugs</a></li>
+        <li><a href="#treatment">Treatment</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="icon sun-icon">☀️</span>
+        <span class="icon moon-icon">🌙</span>
+      </button>
     </nav>
   </header>
-  <main>
-    <section id="hero">
-      <div>
-        <img src="Logo.png" alt="Hero Image" width="100px">
+  <section id="hero">
+    <div class="hero-image">
+      <img src="../assets/logo.png" alt="Hero Image">
+    </div>
+    <div class="hero-text">
+      <h1>Dr. Said</h1>
+      <h2>Trusted Veterinary Care</h2>
+      <p>
+        Providing gentle, professional care<br>
+        for your beloved animals.
+      </p>
+      <a id="call-to-action" href="#contact">Book an Appointment</a>
+    </div>
+  </section>
+  <section id="animals">
+    <div class="section-text">
+      <h1>Animals I Treat</h1>
+      <ul>
+        <li>
+          <h2>Dogs</h2>
+          <p class="hidden">From puppies to seniors, I provide comprehensive care including wellness exams, vaccinations, dental care, and treatment for various conditions. Special care is given to each breed's unique needs.</p>
+        </li>
+        <li>
+          <h2>Cats</h2>
+          <p class="hidden">Expert feline care and treatment including wellness exams, vaccinations, dental care, and management of feline-specific conditions. I understand cats' unique behaviors and how to make vet visits less stressful.</p>
+        </li>
+        <li>
+          <h2>Birds</h2>
+          <p class="hidden">Gentle handling and health checkups for avian friends. I provide specialized care for various bird species, including nutritional guidance, beak and nail trimming, and treatment of common avian conditions.</p>
+        </li>
+        <li>
+          <h2>Rabbits</h2>
+          <p class="hidden">Specialized care for rabbits and small mammals. Services include dental checks, nutritional counseling, spay/neuter procedures, and treatment of common conditions affecting these delicate creatures.</p>
+        </li>
+        <li>
+          <h2>Hamsters</h2>
+          <p class="hidden">Tiny friends deserve big care too. I offer specialized services for hamsters and other pocket pets including health assessments, nutritional guidance, and treatment for common conditions.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="section-image">
+      <img src="../assets/animals.png" alt="animals">
+    </div>
+  </section>
+  <section id="drugs" class="flex-row-reverse">
+    <div class="section-text">
+      <h1>In-House Medications</h1>
+      <ul>
+        <li>
+          <h2>PetCalm</h2>
+          <p class="hidden">A natural supplement designed to relieve anxiety and stress in dogs and cats. Especially useful for thunderstorms, fireworks, travel, or separation anxiety. Contains a blend of calming herbs and vitamins.</p>
+        </li>
+        <li>
+          <h2>FurPlus</h2>
+          <p class="hidden">Comprehensive multivitamins for healthy fur and skin. This supplement provides essential nutrients to promote a shiny coat, reduce shedding, and support skin health for dogs and cats of all ages.</p>
+        </li>
+        <li>
+          <h2>WormAway</h2>
+          <p class="hidden">Safe and effective anti-parasitic medication for small mammals. Formulated specifically for the sensitive digestive systems of rabbits, guinea pigs, and other small pets to eliminate common internal parasites.</p>
+        </li>
+        <li>
+          <h2>FeatherBoost</h2>
+          <p class="hidden">Specialized supplements for bird health that support immune function, feather quality, and overall vitality. Contains essential vitamins, minerals, and amino acids specific to avian nutritional needs.</p>
+        </li>
+        <li>
+          <h2>BiteGuard</h2>
+          <p class="hidden">Premium flea and tick protection that's safe for all pets. Our formula provides long-lasting protection against external parasites while being gentle on your pet's skin and system.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="section-image">
+      <img src="../assets/drugs.png" alt="drugs">
+    </div>
+  </section>
+  <section id="treatment">
+    <div class="section-text">
+      <h1>Home Treatment Visits</h1>
+      <ul>
+        <li>
+          <h2>Wellness Checkups</h2>
+          <p class="hidden">Regular health assessments conducted in the comfort of your home. These comprehensive exams include vital signs monitoring, weight checks, and overall health evaluation.</p>
+        </li>
+        <li>
+          <h2>Vaccinations</h2>
+          <p class="hidden">Stay current on all necessary vaccinations without the stress of clinic visits. I bring all required vaccines and can administer them safely in your home environment.</p>
+        </li>
+        <li>
+          <h2>Urgent Care</h2>
+          <p class="hidden">When your pet needs immediate attention but isn't critically ill, I can provide home-based urgent care services to address many common conditions and injuries.</p>
+        </li>
+        <li>
+          <h2>Geriatric Care</h2>
+          <p class="hidden">Specialized care for senior pets who may have mobility issues or stress easily. I provide gentle examinations and treatments tailored to aging pets' needs.</p>
+        </li>
+      </ul>
+    </div>
+    <div class="section-image">
+      <img src="../assets/treatment.png" alt="doctor">
+    </div>
+  </section>
+  <section id="testimonials" class="flex-column">
+    <h1>What Pet Owners Say</h1>
+    <div class="testimonials-list">
+      <div class="testimonial">
+        <div class="testimonial-image">
+          <img src="https://placehold.co/60@2x.png" alt="">
+        </div>
+        <div class="testimonial-text">
+          <span>Sarah T.</span>
+          <p>Dr. Alex was amazing with my German Shepherd. Calm and professional.</p>
+        </div>
       </div>
-      <div>
-        <h1>Said</h1>
-        <p>
-          Vet, Medicine, and Health Sciences.<br>
-          Cats, Dogs, and other animals.
-        </p>
-        <a href="/learn-more">Book a Date</a>
+      <div class="testimonial">
+        <div class="testimonial-image">
+          <img src="https://placehold.co/60@2x.png" alt="">
+        </div>
+        <div class="testimonial-text">
+          <span>Omar L.</span>
+          <p>My cat usually hides from vets, but she was totally at ease!</p>
+        </div>
       </div>
-    </section>
-    <section id="animals">
-      <div>
-        <h1>Animals I Treat</h1>
-        <ul>
-          <li>Cows</li>
-          <li>Cats</li>
-          <li>Dogs</li>
-          <li>Rabbits</li>
-          <li>Birds</li>
-        </ul>
+      <div class="testimonial">
+        <div class="testimonial-image">
+          <img src="https://placehold.co/60@2x.png" alt="">
+        </div>
+        <div class="testimonial-text">
+          <span>Mei W.</span>
+          <p>Great care for my bunny. He even did a home visit when I couldn't drive.</p>
+        </div>
       </div>
-      <div>
-        <img src="Logo.png" alt="" width="300px">
-      </div>
-    </section>
-    <section>
-      <div>
-        <img src="Logo.png" alt="" width="300px">
-      </div>
-      <div>
-        <h1>Drugs I Provide</h1>
-        <ul>
-          <li>Antibiotics</li>
-          <li>Vaccines</li>
-          <li>Anti-inflammatories</li>
-          <li>Analgesics</li>
-          <li>Antiparasitics</li>
-      </div>
-    </section>
-    <section>
-      <div>
-        <h1>Treat your animal at your home</h1>
-        <p>I also provide the service of animal treatment at home.</p>
-      </div>
-      <div>
-        <img src="Logo.png" alt="" width="300px">
-      </div>
-    </section>
-    <section id="testimonials">
-      <h1>What clients said about me</h1>
-      <div>
-        <img src="" alt="">
-        <b>John Dow</b>
-        <p>Very good vet</p>
-      </div>
-      <div>
-        <img src="" alt="">
-        <b>John Dow</b>
-        <p>Very good vet</p>
-      </div>
-      <div>
-        <img src="" alt="">
-        <b>John Dow</b>
-        <p>Very good vet</p>
-      </div>
-    </section>
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <div>
-        <form action="" method="post">
-          <div>
-            <label for="name">name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required>
-          </div>
-          <div>
-            <label for="name">email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
-          </div>
-          <div>
-            <label for="name">message</label>
-            <textarea name="message" id="message"></textarea>
-          </div>
-          <div>
-            <input type="submit" value="Send">
-            <button type="reset">Reset</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-  <footer>
-
-  </footer>
+    </div>
+  </section>
+  <section id="contact" class="flex-column center">
+    <h1>Contact Me</h1>
+    <div class="contact-form">
+      <form action="" method="post">
+        <div class="form-input">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-input">
+          <label for="name">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+          <div class="form-input">
+          <label for="name">Message</label>
+          <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="form-buttons">
+          <input class="btn-submit" type="submit" value="Send">
+          <button class="btn-reset" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <script src="script.js"></script>
 </body>
 </html>
